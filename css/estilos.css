@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.animacion{
+    width: 400px;
+    height: 400px;
+    background-color: #ccc;
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+    overflow: hidden;
+}
+
+img{
+    width: 100%;
+    animation-name: anime;
+    /*nombre de la funcion*/
+    animation-duration: 1.5s;
+    /*tiempo que dure la animacion*/
+    animation-timing-function: ease-in;
+    /*tipo de animacion*/
+    animation-iteration-count: infinite;
+    /*veces que se va a repetir*/
+    animation-direction:alternate;
+    /*en que direccion to-> from > to > from*/
+    /*
+    animation: anime 1.5s ease-in infinite alternative;
+    */
+}
+
+@keyframes anime{
+    /*funcion que hace la animacion*/
+       /*  to{
+            transform: scale(1);
+        }
+        from{
+            transform: scale(1.2);
+        }
+    */
+       
+            0%{
+                transform: scale(1);
+            }
+            50%{
+                transform: scale(1.2);
+            }
+            100%{
+                transform: scale(1.3);
+            }
+        
+    
+    }
+@-o-keyframes anime{
+/*funcion que hace la animacion*/
+    to{
+        transform: scale(1);
+    }
+    from{
+        transform: scale(1.2);
+    }
+
+    /*
+        0%{
+            transform: scale(1);
+        }
+        50%{
+            transform: scale(1.2);
+        }
+        100%{
+            transform: scale(1.3);
+        }
+    */
+
+}
